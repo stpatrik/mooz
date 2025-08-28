@@ -40,4 +40,7 @@ const localQuery = ref(props.modelValue)
 watch(() => props.modelValue, v => { if (v !== localQuery.value) localQuery.value = v })
 watch(localQuery, v => emit('update:modelValue', v))
 
-function on
+function onSubmit () {
+  emit('submit')
+}
+</script>
