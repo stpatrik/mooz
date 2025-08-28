@@ -5,7 +5,7 @@
         <!-- Лого -->
         <div class="brand" aria-label="MOOZ">
           <img class="brand-logo" src="@/assets/logo/logo.svg" alt="MOOZ logo" />
-          <img class="brand-logo" src="@/assets/logo/mooz-wordmark.svg" alt="MOOZ logo" />
+          <img class="brand-text" src="@/assets/logo/mooz-wordmark.svg" alt="MOOZ logo" width="71px" length="17px"/>
         </div>
 
         <!-- Поиск -->
@@ -31,7 +31,7 @@
   <main>
     <div class="container">
       <div class="info" v-if="!loading && totalResultsNum > 0">
-        <span>You searched for: <strong>{{ queryShown }}</strong></span>
+        <span>You searched for: <u>{{ queryShown }}</u></span>
         <span class="badge">{{ totalResultsNum }} results</span>
       </div>
 
