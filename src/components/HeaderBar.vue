@@ -5,7 +5,7 @@
         <!-- твой бренд -->
         <div class="brand" aria-label="MOOZ">
           <img class="brand-logo" src="/logo.svg" alt="" />
-          <span>MOOZ</span>
+          <img class="brand-logo" src="/mooz-wordmark.svg" alt="" />
         </div>
 
         <!-- новый компонент поиска -->
