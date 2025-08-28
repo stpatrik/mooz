@@ -1,8 +1,13 @@
-// vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: '/mooz/',   // ⚡ Важно для GitHub Pages
+  base: '/mooz/',   // имя репозитория для GitHub Pages
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)), // ⚡️ алиас
+    },
+  },
 })
