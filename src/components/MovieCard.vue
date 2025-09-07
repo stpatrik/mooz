@@ -18,10 +18,10 @@
     </div>
 
     <ul class="card-meta">
-      <li><span class="label">Name:</span>{{ movie.Title }}</li>
-      <li><span class="label">Year:</span>{{ movie.Year }}</li>
-      <li><span class="label">imdbID:</span>{{ movie.imdbID }}</li>
-      <li><span class="label">Type:</span>{{ movie.Type }}</li>
+      <li><span class="label">Name: </span>{{ movie.Title }}</li>
+      <li><span class="label">Year: </span>{{ movie.Year }}</li>
+      <li><span class="label">imdbID: </span>{{ movie.imdbID }}</li>
+      <li><span class="label">Type: </span>{{ movie.Type }}</li>
     </ul>
   </article>
 </template>
