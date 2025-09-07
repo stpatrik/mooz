@@ -1,8 +1,8 @@
 <template>
   <div class="user">
-    <img src="@/assets/logo/user.svg" alt="User avatar" class="user-icon" />
-    <span>Your Name</span>
-  </div>
+          <img class="user-icon" src="@/assets/logo/user.svg" alt="" />
+          <span>Your Name</span>
+        </div>
 </template>
 
 <script setup>

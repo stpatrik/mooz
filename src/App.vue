@@ -1,32 +1,5 @@
 <template>
-  <header class="header">
-    <div class="container">
-      <div class="header-row">
-        <!-- Лого -->
-        <div class="brand" aria-label="MOOZ">
-          <img class="brand-logo" src="@/assets/logo/logo.svg" alt="MOOZ logo" />
-          <img class="brand-text" src="@/assets/logo/mooz-wordmark.svg" alt="MOOZ logo" width="71px" length="17px"/>
-        </div>
-
-        <!-- Поиск -->
-        <form class="search search--large" @submit.prevent="submitSearch" role="search" aria-label="Поиск фильмов">
-          <input
-            v-model="query"
-            type="search"
-            placeholder="Batman"
-            :aria-label="'Поиск: ' + (query || 'введите запрос')"
-          />
-          <button class="search-icon" type="submit" aria-label="Искать"></button>
-        </form>
-
-        <!-- Юзер -->
-        <div class="user">
-          <img class="user-icon" src="@/assets/logo/user.svg" alt="" />
-          <span>Your Name</span>
-        </div>
-      </div>
-    </div>
-  </header>
+    <Header v-model:query="query" @submitSearch="submitSearch" />
 
   <main>
     <div class="container">
@@ -56,6 +29,10 @@ import MovieGrid from './components/MovieGrid.vue'
 import Pagination from './components/Pagination.vue'
 import Loader from './components/Loader.vue'
 import EmptyState from './components/EmptyState.vue'
+import Logo from './components/Logo.vue'
+import User from './components/User.vue'
+import Search from './components/Search.vue'
+import Header from './components/Header.vue'
 
 /** ----------- состояние ----------- */
 const API = 'https://www.omdbapi.com/?apikey=8523cbb8'

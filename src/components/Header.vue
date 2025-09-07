@@ -1,23 +1,34 @@
-<script setup>
-import logoIcon from '@/assets/logo/logo.svg'
-import logoText from '@/assets/logo/mooz-word.svg'
-import userIcon from '@/assets/logo/user.svg'
-</script>
-
 <template>
   <header class="header">
     <div class="container">
       <div class="header-row">
-        <div class="brand">
-          <img :src="logoIcon" alt="MOOZ logo" class="brand-logo" />
-          <img :src="logoText" alt="MOOZ text" class="brand-text" />
-        </div>
-
-        <div class="user">
-          <img :src="userIcon" alt="" class="user-icon" />
-          <span>Your Name</span>
-        </div>
+        <Logo />
+        <!-- v-model привязан НЕ к пропу, а к локальному computed 'model' -->
+        <Search v-model="model" size="large" @submit="onSubmit" />
+        <User />
       </div>
     </div>
   </header>
 </template>
+
+<script setup>
+import { computed } from 'vue'
+import Logo from './Logo.vue'
+import User from './User.vue'
+import Search from './Search.vue'
+
+const props = defineProps({
+  query: { type: String, default: '' }
+})
+const emit = defineEmits(['update:query', 'submitSearch'])
+
+// прокси для v-model: читаем из пропа, пишем через emit
+const model = computed({
+  get: () => props.query,
+  set: (v) => emit('update:query', v)
+})
+
+function onSubmit() {
+  emit('submitSearch')
+}
+</script>
