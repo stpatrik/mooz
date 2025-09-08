@@ -75,7 +75,7 @@ main .container:first-child{ padding-top: 0 !important; }
 /* пользователь */
 .user{ display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .user .avatar, .user-icon{ width: 25px; height: 25px; flex: 0 0 auto; }
-.user span { width: 70px; height: 20px; font-size: 14px; display: inline-block; }
+.user span { width: 75px; height: 20px; font-size: 14px; display: inline-block; }
 
 @media (max-width: 640px){
   .header-row{ flex-direction: column; align-items: flex-start; gap: 0; }
