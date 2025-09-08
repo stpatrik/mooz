@@ -187,6 +187,7 @@ main .container:first-child{ padding-top: 0 !important; }
 .pagination > *:not(:first-child){ border-left: 1px solid #E6EAF5; }
 
 .page-btn, .dots{
+
   box-sizing: border-box;
   width: 30px;         /* фиксированная ширина */
   height: 27px;        /* фиксированная высота */
@@ -213,3 +214,19 @@ main .container:first-child{ padding-top: 0 !important; }
 
 .empty{ text-align: left; color: var(--muted); padding: 16px 0; }
 .empty h3{ color: var(--text); margin: 0 0 6px; }
+
+/* Форм-элементы наследуют шрифт и цвет */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Явно задаём Gilroy для пагинации (на всякий случай) */
+.pagination, .page-btn, .dots {
+  font-family: 'Gilroy', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Если используешь .active { font-weight: 600 } — 
+   убедись, что есть соответствующий начертание.
+   Иначе браузер «синтезирует» вес и выглядит криво. */
+.page-btn.active { font-weight: 700; }  /* или добавь файл Gilroy-Semibold/Medium и используй 600 */
