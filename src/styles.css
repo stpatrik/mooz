@@ -2,16 +2,16 @@
 
 /* src/styles.css */
 
-@font-face { font-family:'Gilroy'; src:url('/mooz/fonts/Gilroy-Regular.ttf') format('truetype'); font-weight:400; font-style:normal; font-display:swap; }
-@font-face { font-family:'Gilroy'; src:url('/mooz/fonts/Gilroy-Bold.ttf')    format('truetype'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Gilroy'; src:url('/mooz/fonts/Gilroy-Regular.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Gilroy'; src:url('/mooz/fonts/Gilroy-Bold.woff2')    format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
 @font-face{
   font-family:'Gilroy';
-  src:url('/mooz/fonts/Gilroy-Regular.ttf') format('truetype');
+  src:url('/mooz/fonts/Gilroy-Regular.woff2') format('woff2');
   font-weight:400; font-style:normal; font-display:swap;
 }
 @font-face{
   font-family:'Gilroy';
-  src:url('/mooz/fonts/Gilroy-Bold.ttf') format('truetype');
+  src:url('/mooz/fonts/Gilroy-Bold.woff2') format('woff2');
   font-weight:700; font-style:normal; font-display:swap;
 }
 
@@ -75,7 +75,7 @@ main .container:first-child{ padding-top: 0 !important; }
 /* пользователь */
 .user{ display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .user .avatar, .user-icon{ width: 25px; height: 25px; flex: 0 0 auto; }
-.user span { width: 75px; height: 20px; font-size: 14px; display: inline-block; }
+.user span { width: 70px; height: 20px; font-size: 14px; display: inline-block; }
 
 @media (max-width: 640px){
   .header-row{ flex-direction: column; align-items: flex-start; gap: 0; }
