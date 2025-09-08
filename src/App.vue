@@ -29,9 +29,6 @@ import MovieGrid from './components/MovieGrid.vue'
 import Pagination from './components/Pagination.vue'
 import Loader from './components/Loader.vue'
 import EmptyState from './components/EmptyState.vue'
-import Logo from './components/Logo.vue'
-import User from './components/User.vue'
-import Search from './components/Search.vue'
 import Header from './components/Header.vue'
 
 /** ----------- состояние ----------- */

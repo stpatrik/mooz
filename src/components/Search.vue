@@ -36,6 +36,3 @@ function onSubmit() {
 }
 </script>
 
-<style scoped>
-/* опционально — используешь свои существующие классы */
-</style>

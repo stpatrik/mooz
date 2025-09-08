@@ -7,17 +7,3 @@
 
 <script setup>
 </script>
-
-<style scoped>
-.user {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.user-icon {
-  width: 25px;
-  height: 25px;
-}
-</style>
